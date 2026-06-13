@@ -12,6 +12,7 @@ body {
 .form {
   display: flex;
   justify-content: center;
+  width: 100%;
   gap: 8px;
   margin-bottom: 24px;
 }
@@ -23,15 +24,20 @@ body {
   border-radius: 4px;
   font-size: 14px;
   outline: none;
+  background-color: white;
+  transition: border-color 0.2s;
 }
 
 .form input:focus {
   border-color: #6c8cff;
 }
+.form input:hover {
+  border-color: #000000;
+}
 
 .form button {
   padding: 8px 20px;
-  background-color: #6c8cff;
+  background-color: rgba(78, 117, 255, 1);
   color: white;
   border: none;
   border-radius: 4px;
@@ -41,7 +47,7 @@ body {
 }
 
 .form button:hover {
-  background-color: #5a7be0;
+  background-color: rgba(108, 140, 255, 1);
 }
 
 /* Gallery */
